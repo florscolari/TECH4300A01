@@ -7,8 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/top_box"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:contentDescription="@string/top_box_description"
+        android:src="@drawable/top_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/first_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/first_name"
@@ -16,6 +26,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_name"
+        app:layout_constraintEnd_toEndOf=""
+        app:layout_constraintStart_toStartOf=""
+        app:layout_constraintTop_toTopOf="" />
 
-
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/position"
+        app:layout_constraintEnd_toEndOf=""
+        tools:layout_editor_absoluteY="57dp" />
+-->
 </androidx.constraintlayout.widget.ConstraintLayout>

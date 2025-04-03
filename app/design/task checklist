@@ -1,1 +1,8 @@
-Set strings
+▸ Set strings in strings.xml
+▸ Set strings in activity_main.xml
+▸ Set id in activity_main.xml
+
+📘 Shape: Rectangle vs SVG?
+🐞 top box isn't taking its parent's height -> SOLVED. it was because it has size defined within the drawable. I removed it and it worked.
+
+📘 dp units
