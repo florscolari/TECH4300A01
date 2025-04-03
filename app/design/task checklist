@@ -10,4 +10,5 @@
 ▸ Set circle as image container
     📘 How to make an ImageView rounded? -> SOLVED. Used ShapeableImageView instead of ImageView
     Add style for rounded container on Themes
-    ⚠️ ShapeableImageView is within Material Components (external library). Are external libraries allowed? Any quickaround just in case they aren't?
+    ⚠️ ShapeableImageView is within the default Android Studio setup. TBD if it is allowed for A1. So cool to use!
+    🐞 shapeableImageView doesn't display image when running emulator. SOLVED. The right way of pointing the image resource is android:src=, I was using tools:srcCompat
