@@ -5,5 +5,11 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <!-- Circle Container for Profile Picture (using shapeableImageView) -->
+    <style name="circle_profile_pic_style" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
     <style name="Theme.TECH4300A01" parent="Base.Theme.TECH4300A01" />
 </resources>

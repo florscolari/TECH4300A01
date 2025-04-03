@@ -1,8 +1,13 @@
 ▸ Set strings in strings.xml
 ▸ Set strings in activity_main.xml
 ▸ Set id in activity_main.xml
+▸ Set a top bar (box) in the background
+    📘 Shape: Rectangle vs SVG?
+    🐞 top box isn't taking its parent's height -> SOLVED. it was because it has size defined within the drawable. I removed it and it worked.
 
-📘 Shape: Rectangle vs SVG?
-🐞 top box isn't taking its parent's height -> SOLVED. it was because it has size defined within the drawable. I removed it and it worked.
-
-📘 dp units
+    📘 dp units
+▸ Set drawable for profile picture
+▸ Set circle as image container
+    📘 How to make an ImageView rounded? -> SOLVED. Used ShapeableImageView instead of ImageView
+    Add style for rounded container on Themes
+    ⚠️ ShapeableImageView is within Material Components (external library). Are external libraries allowed? Any quickaround just in case they aren't?

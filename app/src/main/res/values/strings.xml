@@ -6,6 +6,7 @@
     <string name="first_name">Mabel</string>
     <string name="last_name">Valentino</string>
     <string name="position">IT Analyst</string>
+    <string name="profile_picture_description">"Decorative Element"</string>
 
     <!-- Team Details Section -->
     <string name="team_details_h2">Team Details</string>

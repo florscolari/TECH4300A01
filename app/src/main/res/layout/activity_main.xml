@@ -10,12 +10,26 @@
     <ImageView
         android:id="@+id/top_box"
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="160dp"
         android:contentDescription="@string/top_box_description"
         android:src="@drawable/top_box"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!--TODO: if shapeableImageView allowed > add dependency. if NO, replace for transparent img -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/profile_picture_description"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_box"
+        tools:srcCompat="@drawable/mabel_headshot"
+        app:shapeAppearanceOverlay="@style/circle_profile_pic_style"/>
     <!--
     <TextView
         android:id="@+id/first_name"
