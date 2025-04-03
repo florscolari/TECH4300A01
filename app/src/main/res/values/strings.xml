@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">TECH4300A01</string>
 
+    <!--Buttons -->
+    <string name="edit_btn">Edit</string>
+
+    <!-- Content -->
     <!-- Profile Header -->
     <string name="top_box_description">"Decorative Element"</string>
     <string name="first_name">Mabel</string>

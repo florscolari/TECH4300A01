@@ -12,3 +12,9 @@
     Add style for rounded container on Themes
     ⚠️ ShapeableImageView is within the default Android Studio setup. TBD if it is allowed for A1. So cool to use!
     🐞 shapeableImageView doesn't display image when running emulator. SOLVED. The right way of pointing the image resource is android:src=, I was using tools:srcCompat
+
+--- Buttons ---
+Set primary and secondary styles on themes to be reusable
+    ⚠️ How on earth an outline button is a custom one instead of being a default view?
+Set secondary btn as custom btn
+Set color by state to add feedback after tapping btn https://youtu.be/UXGDPHNAL90?si=ZeK1do6JznlP11IJ

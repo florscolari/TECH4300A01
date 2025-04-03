@@ -30,7 +30,23 @@
         app:layout_constraintTop_toTopOf="@+id/top_box"
         android:src="@drawable/mabel_headshot"
         app:shapeAppearanceOverlay="@style/circle_profile_pic_style"/>
-    <!--
+
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_outlined"
+        android:text="@string/edit_btn"
+        android:textColor="@color/colorNeutral700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilePicture" />
+
+
+
+
+<!--
     <TextView
         android:id="@+id/first_name"
         android:layout_width="wrap_content"
@@ -49,12 +65,6 @@
         app:layout_constraintStart_toStartOf=""
         app:layout_constraintTop_toTopOf="" />
 
-    <TextView
-        android:id="@+id/position"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/position"
-        app:layout_constraintEnd_toEndOf=""
-        tools:layout_editor_absoluteY="57dp" />
+
 -->
 </androidx.constraintlayout.widget.ConstraintLayout>
