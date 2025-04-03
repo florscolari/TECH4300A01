@@ -1,3 +1,41 @@
 <resources>
     <string name="app_name">TECH4300A01</string>
+
+    <!-- Profile Header -->
+    <string name="first_name">Mabel</string>
+    <string name="last_name">Valentino</string>
+    <string name="position">IT Analyst</string>
+
+    <!-- Team Details Section -->
+    <string name="team_details_h2">Team Details</string>
+    <string name="manager_label">Manager</string>
+    <string name="manager">Ford Pines</string>
+    <string name="team_label">Team</string>
+    <string name="team">Perth02 - Data Analytics</string>
+
+    <!-- Work Details Section -->
+    <string name="work_details_h2">Work Details</string>
+    <string name="hire_date_label">Hired on</string>
+    <string name="hire_date">03/03/2025</string>
+
+    <string name="contract_type_label">Hired on</string>
+    <string name="contract_type">Part-Time</string>
+
+    <string name="start_date_label">Started on</string>
+    <string name="start_date">17/03/2025</string>
+
+    <string name="contract_expired_date_label">Contract Due Date</string>
+    <string name="contract_expired_date">N/A</string>
+
+    <!-- Personal Details Section -->
+    <string name="personal_details_h2">Personal Details</string>
+    <string name="dob_label">Date of Birth</string>
+    <string name="dob">18/09/1987</string>
+
+    <string name="gender_label">Gender</string>
+    <string name="gender">Female</string>
+
+    <string name="emergency_contact_label">Emergency Contact</string>
+    <string name="emergency_contact_phone_number">+61 0415 123 123</string>
+    <string name="emergency_contact_name">Partner</string>
 </resources>
