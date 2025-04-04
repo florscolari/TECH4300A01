@@ -1,327 +1,338 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:scrollbars="vertical"
+    android:fadingEdge="none"
+    >
 
-    <!-- Top box -->
-    <ImageView
-        android:id="@+id/top_box"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:contentDescription="@string/top_box_description"
-        android:src="@drawable/top_box"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Rounded Profile Picture -->
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/profilePicture"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="80dp"
-        android:contentDescription="@string/profile_picture_description"
-        android:scaleType="centerCrop"
-        android:src="@drawable/mabel_headshot"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/top_box"
-        app:shapeAppearanceOverlay="@style/circle_profile_pic_style" />
-
-
-    <!-- First Name -->
-    <TextView
-        android:id="@+id/first_name"
-        style="@style/heading1"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="2dp"
-        android:text="@string/first_name"
-        app:layout_constraintEnd_toStartOf="@+id/last_name"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/horizontal_bottom_profile" />
+        tools:context=".MainActivity">
 
-    <!-- Last Name -->
-    <TextView
-        android:id="@+id/last_name"
-        style="@style/heading1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/last_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/first_name"
-        app:layout_constraintTop_toTopOf="@+id/horizontal_bottom_profile" />
+        <!-- Top box -->
+        <ImageView
+            android:id="@+id/top_box"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:contentDescription="@string/top_box_description"
+            android:src="@drawable/top_box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Position -->
-    <TextView
-        android:id="@+id/position"
-        style="@style/subheading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:text="@string/position"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontal_top_position" />
-
-    <!-- Team Details h2 -->
-    <TextView
-        android:id="@+id/team_details_h2"
-        style="@style/heading2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="@string/team_details_h2"
-        app:layout_constraintStart_toStartOf="@+id/vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/horizontal_top_position" />
-
-    <!-- Manager Label -->
-    <TextView
-        android:id="@+id/manager_label"
-        style="@style/label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/manager_label"
-        app:layout_constraintStart_toStartOf="@+id/vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/team_details_h2" />
-
-    <!-- Manager Small Picture -->
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/manager_profile"
-        android:layout_width="22dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="4dp"
-        android:contentDescription="@string/profile_picture_description"
-        android:scaleType="centerCrop"
-        android:src="@drawable/manager_headshot"
-        app:layout_constraintEnd_toStartOf="@+id/manager"
-        app:layout_constraintStart_toEndOf="@+id/vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/manager_label"
-        app:shapeAppearanceOverlay="@style/circle_profile_pic_style" />
-
-    <!-- Manager Value -->
-    <TextView
-        android:id="@+id/manager"
-        style="@style/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:text="@string/manager"
-        app:layout_constraintStart_toEndOf="@+id/manager_profile"
-        app:layout_constraintTop_toBottomOf="@+id/manager_label" />
+        <!-- Rounded Profile Picture -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="80dp"
+            android:contentDescription="@string/profile_picture_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mabel_headshot"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/top_box"
+            app:shapeAppearanceOverlay="@style/circle_profile_pic_style" />
 
 
-    <!-- Team Label -->
-    <TextView
-        android:id="@+id/team_label"
-        style="@style/label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/team_label"
-        app:layout_constraintStart_toStartOf="@+id/vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/manager" />
+        <!-- First Name -->
+        <TextView
+            android:id="@+id/first_name"
+            style="@style/heading1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="2dp"
+            android:text="@string/first_name"
+            app:layout_constraintEnd_toStartOf="@+id/last_name"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_bottom_profile" />
 
-    <!-- Team Small Picture -->
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/team_profile"
-        android:layout_width="22dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="4dp"
-        android:contentDescription="@string/profile_picture_description"
-        android:scaleType="centerCrop"
-        android:src="@drawable/teamprofile"
-        app:layout_constraintEnd_toStartOf="@+id/manager"
-        app:layout_constraintStart_toEndOf="@+id/vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/team_label"
-        app:shapeAppearanceOverlay="@style/circle_profile_pic_style" />
+        <!-- Last Name -->
+        <TextView
+            android:id="@+id/last_name"
+            style="@style/heading1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/last_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/first_name"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_bottom_profile" />
 
-    <!-- Team Value -->
-    <TextView
-        android:id="@+id/team"
-        style="@style/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:text="@string/team"
-        app:layout_constraintStart_toEndOf="@+id/team_profile"
-        app:layout_constraintTop_toBottomOf="@+id/team_label" />
+        <!-- Position -->
+        <TextView
+            android:id="@+id/position"
+            style="@style/subheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="@string/position"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontal_top_position" />
 
-    <!-- Work Details h2 -->
-    <TextView
-        android:id="@+id/work_details_h2"
-        style="@style/heading2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="@string/work_details_h2"
-        app:layout_constraintStart_toStartOf="@+id/vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/team_profile" />
+        <!-- Team Details h2 -->
+        <TextView
+            android:id="@+id/team_details_h2"
+            style="@style/heading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="@string/team_details_h2"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/horizontal_top_position" />
 
-    <!-- Edit Secondary Btn -->
-    <Button
-        android:id="@+id/edit_btn"
-        style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/manrope_medium"
-        android:text="@string/edit_btn"
-        android:textAllCaps="true"
-        app:layout_constraintBaseline_toBaselineOf="@+id/work_details_h2"
-        app:layout_constraintEnd_toStartOf="@+id/vertical_right"
-        app:strokeColor="@color/colorNeutral700" />
+        <!-- Manager Label -->
+        <TextView
+            android:id="@+id/manager_label"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/manager_label"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/team_details_h2" />
 
-    <!-- Hire Date Label -->
-    <TextView
-        android:id="@+id/hire_date_label"
-        style="@style/label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/hire_date_label"
-        app:layout_constraintStart_toStartOf="@+id/vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/work_details_h2" />
+        <!-- Manager Small Picture -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/manager_profile"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/profile_picture_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/manager_headshot"
+            app:layout_constraintEnd_toStartOf="@+id/manager"
+            app:layout_constraintStart_toEndOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/manager_label"
+            app:shapeAppearanceOverlay="@style/circle_profile_pic_style" />
 
-    <!-- Hire Date Value -->
-    <TextView
-        android:id="@+id/hire_date"
-        style="@style/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hire_date"
-        app:layout_constraintStart_toEndOf="@+id/vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/hire_date_label" />
-
-    <!-- Contract Type Label -->
-    <TextView
-        android:id="@+id/contract_type_label"
-        style="@style/label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/contract_type_label"
-        app:layout_constraintStart_toStartOf="@+id/vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/hire_date" />
-
-    <!-- Contract Type Value -->
-    <TextView
-        android:id="@+id/contract_type"
-        style="@style/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/contract_type"
-        app:layout_constraintStart_toEndOf="@+id/vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/contract_type_label" />
-
-    <!-- Start Date Label -->
-    <TextView
-        android:id="@+id/start_date_label"
-        style="@style/label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/start_date_label"
-        app:layout_constraintStart_toStartOf="@+id/vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/contract_type" />
-
-    <!-- Start Date Value -->
-    <TextView
-        android:id="@+id/start_date"
-        style="@style/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/start_date"
-        app:layout_constraintStart_toEndOf="@+id/vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/start_date_label" />
-
-    <!-- Contract Expired Date Label -->
-    <TextView
-        android:id="@+id/contract_expired_date_label"
-        style="@style/label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/contract_expired_date_label"
-        app:layout_constraintStart_toStartOf="@+id/vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/start_date" />
-
-    <!-- Contract Expired Date Value -->
-    <TextView
-        android:id="@+id/contract_expired_date"
-        style="@style/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/contract_expired_date"
-        app:layout_constraintStart_toEndOf="@+id/vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/contract_expired_date_label" />
-
-    <!-- Close Primary Btn -->
-    <Button
-        android:id="@+id/close_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/close_btn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/horizontal_bottom" />
+        <!-- Manager Value -->
+        <TextView
+            android:id="@+id/manager"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/manager"
+            app:layout_constraintStart_toEndOf="@+id/manager_profile"
+            app:layout_constraintTop_toBottomOf="@+id/manager_label" />
 
 
-    <!-- VERTICAL guidelines -->
-    <!-- G vertical_left -->
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/vertical_left"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="24dp" />
+        <!-- Team Label -->
+        <TextView
+            android:id="@+id/team_label"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/team_label"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/manager" />
 
-    <!-- G vertical_right -->
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/vertical_right"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="24dp" />
+        <!-- Team Small Picture -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/team_profile"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/profile_picture_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/teamprofile"
+            app:layout_constraintEnd_toStartOf="@+id/manager"
+            app:layout_constraintStart_toEndOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/team_label"
+            app:shapeAppearanceOverlay="@style/circle_profile_pic_style" />
 
-    <!-- HORIZONTAL Guidelines -->
-    <!-- G horizontal_bottom_profile -->
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/horizontal_bottom_profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="240dp" />
+        <!-- Team Value -->
+        <TextView
+            android:id="@+id/team"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/team"
+            app:layout_constraintStart_toEndOf="@+id/team_profile"
+            app:layout_constraintTop_toBottomOf="@+id/team_label" />
+
+        <!-- Work Details h2 -->
+        <TextView
+            android:id="@+id/work_details_h2"
+            style="@style/heading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="@string/work_details_h2"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/team_profile" />
+
+        <!-- Edit Secondary Btn -->
+        <Button
+            android:id="@+id/edit_btn"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:text="@string/edit_btn"
+            android:textAllCaps="true"
+            app:layout_constraintBaseline_toBaselineOf="@+id/work_details_h2"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:strokeColor="@color/colorNeutral700" />
+
+        <!-- Hire Date Label -->
+        <TextView
+            android:id="@+id/hire_date_label"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/hire_date_label"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/work_details_h2" />
+
+        <!-- Hire Date Value -->
+        <TextView
+            android:id="@+id/hire_date"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hire_date"
+            app:layout_constraintStart_toEndOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/hire_date_label" />
+
+        <!-- Contract Type Label -->
+        <TextView
+            android:id="@+id/contract_type_label"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/contract_type_label"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/hire_date" />
+
+        <!-- Contract Type Value -->
+        <TextView
+            android:id="@+id/contract_type"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contract_type"
+            app:layout_constraintStart_toEndOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/contract_type_label" />
+
+        <!-- Start Date Label -->
+        <TextView
+            android:id="@+id/start_date_label"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/start_date_label"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/contract_type" />
+
+        <!-- Start Date Value -->
+        <TextView
+            android:id="@+id/start_date"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_date"
+            app:layout_constraintStart_toEndOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/start_date_label" />
+
+        <!-- Contract Expired Date Label -->
+        <TextView
+            android:id="@+id/contract_expired_date_label"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/contract_expired_date_label"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/start_date" />
+
+        <!-- Contract Expired Date Value -->
+        <TextView
+            android:id="@+id/contract_expired_date"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contract_expired_date"
+            app:layout_constraintStart_toEndOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/contract_expired_date_label" />
+
+        <!-- Close Primary Btn -->
+        <Button
+            android:id="@+id/close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="@string/close_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contract_expired_date"
+            app:layout_constraintVertical_bias="1.0" />
 
 
-    <!-- G horizontal_bottom -->
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/horizontal_bottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_end="56dp" />
+        <!-- VERTICAL guidelines -->
+        <!-- G vertical_left -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="387dp" />
 
-    <!-- G horizontal_top_position -->
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/horizontal_top_position"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="294dp" />
+        <!-- G vertical_right -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="24dp" />
+
+        <!-- HORIZONTAL Guidelines -->
+        <!-- G horizontal_bottom_profile -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal_bottom_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="240dp" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- G horizontal_bottom -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="56dp" />
+
+        <!-- G horizontal_top_position -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal_top_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="294dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
