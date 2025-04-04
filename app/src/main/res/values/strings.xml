@@ -3,7 +3,7 @@
 
     <!--Buttons -->
     <string name="edit_btn">Edit</string>
-
+    <string name="close_btn">Close</string>
     <!-- Content -->
     <!-- Profile Header -->
     <string name="top_box_description">"Decorative Element"</string>

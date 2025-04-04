@@ -13,10 +13,14 @@
     ⚠️ ShapeableImageView is within the default Android Studio setup. TBD if it is allowed for A1. So cool to use!
     🐞 shapeableImageView doesn't display image when running emulator. SOLVED. The right way of pointing the image resource is android:src=, I was using tools:srcCompat
 
---- Buttons ---
-Set primary and secondary styles on themes to be reusable
+--- Button Views ---
+▸ Set primary and secondary styles on themes to be reusable
     ⚠️ How on earth an outline button is a custom one instead of being a default view?
-Set secondary btn as custom btn
+▸ Set secondary btn as custom btn
     🐞 Having components from Material Components are overwriting the components that don't have that theme applied. I tried to have both types but it didn't work.
        SOLUTION APPLIED: Understand and using button views only from material components (Outlined btn and Contained btn)
-Set color by state to add feedback after tapping btn https://youtu.be/UXGDPHNAL90?si=ZeK1do6JznlP11IJ
+▸ Set color by state to add feedback after tapping btn --> No need to set it, it has been handled by Material Components
+
+--- Text Views ---
+    📘 Each view needs at least 1 vertical constraint and 1 horizontal constraint
+▸ Set styles on themes.xml for heading 1, heading 2, and label

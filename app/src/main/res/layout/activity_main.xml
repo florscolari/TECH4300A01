@@ -23,16 +23,18 @@
         android:id="@+id/profilePicture"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="@string/profile_picture_description"
         android:layout_marginTop="80dp"
+        android:contentDescription="@string/profile_picture_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mabel_headshot"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/top_box"
-        android:src="@drawable/mabel_headshot"
-        app:shapeAppearanceOverlay="@style/circle_profile_pic_style"/>
+        app:shapeAppearanceOverlay="@style/circle_profile_pic_style" />
 
     <!-- Edit Secondary Btn -->
+
+    <!-- First Name -->
     <Button
         android:id="@+id/edit_btn"
         style="?attr/materialButtonOutlinedStyle"
@@ -41,31 +43,75 @@
         android:fontFamily="@font/manrope_medium"
         android:text="@string/edit_btn"
         android:textAllCaps="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profilePicture"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
         app:strokeColor="@color/colorNeutral700" />
 
+    <!-- Last Name -->
+
+    <TextView
+        android:id="@+id/first_name"
+        style="@style/heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name"
+        app:layout_constraintEnd_toStartOf="@+id/last_name"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/last_name"
+        style="@style/heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/first_name"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="383dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="240dp" />
+
+    <Button
+        android:id="@+id/close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.94" />
 
     <!--
-        <TextView
-            android:id="@+id/first_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/first_name"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_name"
+        app:layout_constraintEnd_toEndOf=""
+        app:layout_constraintStart_toStartOf=""
+        app:layout_constraintTop_toTopOf="" />
 
-        <TextView
-            android:id="@+id/last_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/last_name"
-            app:layout_constraintEnd_toEndOf=""
-            app:layout_constraintStart_toStartOf=""
-            app:layout_constraintTop_toTopOf="" />
+-->
 
-
-    -->
 </androidx.constraintlayout.widget.ConstraintLayout>
