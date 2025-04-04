@@ -4,7 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimary">#0b57d0</color> <!--Contrast Ratio with text in white: 6.38 PASS -->
 
-    <color name="colorNeutral400">#FF5722</color>
+    <!-- Neutrals -->
     <color name="colorNeutral700">#455A64</color>
     <color name="colorNeutral800">#37474F</color>
     <color name="colorNeutral900">#263238</color>

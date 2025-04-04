@@ -33,8 +33,6 @@
         app:shapeAppearanceOverlay="@style/circle_profile_pic_style" />
 
     <!-- Edit Secondary Btn -->
-
-    <!-- First Name -->
     <Button
         android:id="@+id/edit_btn"
         style="?attr/materialButtonOutlinedStyle"
@@ -43,48 +41,52 @@
         android:fontFamily="@font/manrope_medium"
         android:text="@string/edit_btn"
         android:textAllCaps="true"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_top_position"
         app:strokeColor="@color/colorNeutral700" />
 
-    <!-- Last Name -->
-
+    <!-- First Name -->
     <TextView
         android:id="@+id/first_name"
         style="@style/heading1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="2dp"
         android:text="@string/first_name"
         app:layout_constraintEnd_toStartOf="@+id/last_name"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintTop_toTopOf="@+id/horizontal_bottom_profile" />
 
+    <!-- Last Name -->
     <TextView
         android:id="@+id/last_name"
         style="@style/heading1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
         android:text="@string/last_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/first_name"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintTop_toTopOf="@+id/horizontal_bottom_profile" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
+    <!-- Position -->
+    <TextView
+        android:id="@+id/position"
+        style="@style/subheading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="383dp" />
+        android:layout_marginTop="0dp"
+        android:text="@string/position"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_top_position" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="240dp" />
-
+    <!-- Close Primary Btn -->
     <Button
         android:id="@+id/close_btn"
         android:layout_width="wrap_content"
@@ -93,25 +95,58 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+        app:layout_constraintTop_toTopOf="@+id/horizontal_bottom" />
 
+
+
+
+
+
+
+
+
+
+    <!-- VERTICAL guidelines -->
+    <!-- G vertical_left -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
+        android:id="@+id/vertical_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <!-- G vertical_right -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <!-- G horizontal_bottom_profile -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_bottom_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.94" />
+        app:layout_constraintGuide_begin="240dp" />
 
-    <!--
-    <TextView
-        android:id="@+id/last_name"
+    <!-- HORIZONTAL Guidelines -->
+    <!-- G horizontal_bottom -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_bottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/last_name"
-        app:layout_constraintEnd_toEndOf=""
-        app:layout_constraintStart_toStartOf=""
-        app:layout_constraintTop_toTopOf="" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="56dp" />
 
--->
+    <!-- G horizontal_top_position -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_top_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="294dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
