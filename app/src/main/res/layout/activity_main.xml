@@ -135,6 +135,42 @@
         app:layout_constraintTop_toBottomOf="@+id/manager_label" />
 
 
+    <!-- Team Label -->
+    <TextView
+        android:id="@+id/team_label"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/team_label"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/manager" />
+
+    <!-- Team Small Picture -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/team_profile"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/profile_picture_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mabel_headshot"
+        app:layout_constraintEnd_toStartOf="@+id/manager"
+        app:layout_constraintStart_toEndOf="@+id/vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/team_label"
+        app:shapeAppearanceOverlay="@style/circle_profile_pic_style" />
+
+    <!-- Team Value -->
+    <TextView
+        android:id="@+id/team"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/team"
+        app:layout_constraintStart_toEndOf="@+id/team_profile"
+        app:layout_constraintTop_toBottomOf="@+id/team_label" />
 
 
 
