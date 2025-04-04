@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TECH4300A01 Sistema de Gestão de Funcionários</string>
+
+    <!--Buttons -->
+    <string name="edit_btn">Editar</string>
+    <string name="close_btn">Fechar</string>
+    <!-- Content -->
+    <!-- Profile Header -->
+    <string name="top_box_description">Elemento Decorativo</string>
+    <string name="first_name">Mabel</string>
+    <string name="last_name">Valentino</string>
+    <string name="position">Analista de TI</string>
+    <string name="profile_picture_description">Elemento Decorativo</string>
+
+    <!-- Team Details Section -->
+    <string name="team_details_h2">Detalhes da Equipe</string>
+    <string name="manager_label">Gerente</string>
+    <string name="manager">Ford Pines</string>
+    <string name="team_label">Equipe</string>
+    <string name="team">Perth02 - Análise de Dados</string>
+
+    <!-- Work Details Section -->
+    <string name="work_details_h2">Detalhes do Trabalho</string>
+    <string name="hire_date_label">Contratado em</string>
+    <string name="hire_date">03/03/2025</string>
+
+    <string name="contract_type_label">Tipo de Contrato</string>
+    <string name="contract_type">Meio Período</string>
+
+    <string name="start_date_label">Início em</string>
+    <string name="start_date">17/03/2025</string>
+
+    <string name="contract_expired_date_label">Data de Término do Contrato</string>
+    <string name="contract_expired_date">N/D</string>
+
+    <!-- Personal Details Section -->
+    <string name="personal_details_h2">Detalhes Pessoais</string>
+    <string name="dob_label">Data de Nascimento</string>
+    <string name="dob">18/09/1987</string>
+
+    <string name="gender_label">Gênero</string>
+    <string name="gender">Feminino</string>
+
+    <string name="emergency_contact_label">Contato de Emergência</string>
+    <string name="emergency_contact_phone_number">+61 0415 123 123</string>
+    <string name="divider">-</string>
+    <string name="emergency_contact_name">Mason Pines</string>
+    <string name="emergency_contact_relationship">Irmão</string>
+</resources>

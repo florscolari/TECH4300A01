@@ -1,7 +1,18 @@
+CONSTRAINT 1. The UI will dynamically utilize available space, ensuring effective adaptation to changes in screen orientation.
+    Covered on XXX 1.
+CONSTRAINT 2. Implement appropriate colour/contrast schemes and styles to facilitate easy differentiation of information on the screen from other elements.
+    Covered on TASK 1.
+CONSTRAINT 3. Design the user interface to seamlessly support a minimum of two different languages.
+    Covered on TASK 2 (Spanish and Portuguese added. With English, 3 languages covered)
+
+
 Workflow:
-1. Portrait Layout
+1. Portrait Layout (ImageViews, TextViews, ConstraintLayout, ScrollView, Color Palette (WCAG guidelines for Accessible colors is min of >= 4.5:1 ratio & 16sp for text size)
 2. Localisation
 3. Landscape Layout & Other Sizes
+4. Build a slide deck
+5. Record video presentation
+6. Submit
 
 
 
@@ -43,4 +54,6 @@ Workflow:
 
 ---- 2. LOCALISATION TASKS ----
 ▸ Set second language. Chosen: Spanish. es/strings.xml
+    TEST Successful 🚀
+▸ Set third language. Chosen: Portuguese. es/strings.xml
     TEST Successful 🚀
