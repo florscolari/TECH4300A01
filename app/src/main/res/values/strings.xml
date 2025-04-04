@@ -1,16 +1,16 @@
 <resources>
-    <string name="app_name">TECH4300A01</string>
+    <string name="app_name">TECH4300A01 Employee Management System</string>
 
     <!--Buttons -->
     <string name="edit_btn">Edit</string>
     <string name="close_btn">Close</string>
     <!-- Content -->
     <!-- Profile Header -->
-    <string name="top_box_description">"Decorative Element"</string>
+    <string name="top_box_description">Decorative Element</string>
     <string name="first_name">Mabel</string>
     <string name="last_name">Valentino</string>
     <string name="position">IT Analyst</string>
-    <string name="profile_picture_description">"Decorative Element"</string>
+    <string name="profile_picture_description">Decorative Element</string>
 
     <!-- Team Details Section -->
     <string name="team_details_h2">Team Details</string>

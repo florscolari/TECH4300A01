@@ -1,3 +1,11 @@
+Workflow:
+1. Portrait Layout
+2. Localisation
+3. Landscape Layout & Other Sizes
+
+
+
+---- 1. PORTRAIT LAYOUT TASKS ----
 ▸ Set strings in strings.xml
 ▸ Set strings in activity_main.xml
 ▸ Set id in activity_main.xml
@@ -32,3 +40,7 @@
 
 --- Splash Screen ---
 ▸ Set icon (ic_launcher) and background color
+
+---- 2. LOCALISATION TASKS ----
+▸ Set second language. Chosen: Spanish. es/strings.xml
+    TEST Successful 🚀
