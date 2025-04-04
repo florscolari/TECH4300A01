@@ -28,3 +28,7 @@
     ⚠️ I don't have much space above the fold!! How can I go further? I mean, scroll down and have more content?
        Possible solution: using ScrollView > ConstraintView
        Let's give it a go... in a different branch for sure
+       SOLUTION APPLIED: ScrollView with 1 nested child: the ConstraintLayout that I've been using. It worked!! 🚀
+
+--- Splash Screen ---
+▸ Set icon (ic_launcher) and background color

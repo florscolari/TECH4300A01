@@ -43,5 +43,7 @@
 
     <string name="emergency_contact_label">Emergency Contact</string>
     <string name="emergency_contact_phone_number">+61 0415 123 123</string>
-    <string name="emergency_contact_name">Partner</string>
+    <string name="divider">-</string>
+    <string name="emergency_contact_name">Mason Pines</string>
+    <string name="emergency_contact_relationship">Brother</string>
 </resources>
