@@ -24,3 +24,7 @@
 --- Text Views ---
     📘 Each view needs at least 1 vertical constraint and 1 horizontal constraint
 ▸ Set styles on themes.xml for heading 1, heading 2, and label
+▸ Set TextViews for sections: Team Details, Work Details and Personal Details
+    ⚠️ I don't have much space above the fold!! How can I go further? I mean, scroll down and have more content?
+       Possible solution: using ScrollView > ConstraintView
+       Let's give it a go... in a different branch for sure
