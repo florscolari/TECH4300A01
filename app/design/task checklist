@@ -17,4 +17,6 @@
 Set primary and secondary styles on themes to be reusable
     ⚠️ How on earth an outline button is a custom one instead of being a default view?
 Set secondary btn as custom btn
+    🐞 Having components from Material Components are overwriting the components that don't have that theme applied. I tried to have both types but it didn't work.
+       SOLUTION APPLIED: Understand and using button views only from material components (Outlined btn and Contained btn)
 Set color by state to add feedback after tapping btn https://youtu.be/UXGDPHNAL90?si=ZeK1do6JznlP11IJ

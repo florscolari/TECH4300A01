@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Top box -->
     <ImageView
         android:id="@+id/top_box"
         android:layout_width="match_parent"
@@ -17,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--TODO: shapeableImageView TBD by Alex G. if NO, replace for transparent img -->
+    <!-- Rounded Profile Picture -->
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/profilePicture"
         android:layout_width="160dp"
@@ -31,40 +32,40 @@
         android:src="@drawable/mabel_headshot"
         app:shapeAppearanceOverlay="@style/circle_profile_pic_style"/>
 
+    <!-- Edit Secondary Btn -->
     <Button
         android:id="@+id/edit_btn"
+        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_outlined"
+        android:fontFamily="@font/manrope_medium"
         android:text="@string/edit_btn"
-        android:textColor="@color/colorNeutral700"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAllCaps="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profilePicture" />
+        app:layout_constraintTop_toBottomOf="@+id/profilePicture"
+        app:strokeColor="@color/colorNeutral700" />
 
 
+    <!--
+        <TextView
+            android:id="@+id/first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/last_name"
+            app:layout_constraintEnd_toEndOf=""
+            app:layout_constraintStart_toStartOf=""
+            app:layout_constraintTop_toTopOf="" />
 
 
-<!--
-    <TextView
-        android:id="@+id/first_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/first_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/last_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/last_name"
-        app:layout_constraintEnd_toEndOf=""
-        app:layout_constraintStart_toStartOf=""
-        app:layout_constraintTop_toTopOf="" />
-
-
--->
+    -->
 </androidx.constraintlayout.widget.ConstraintLayout>
