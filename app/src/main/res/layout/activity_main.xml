@@ -108,17 +108,31 @@
         app:layout_constraintStart_toStartOf="@+id/vertical_left"
         app:layout_constraintTop_toBottomOf="@+id/team_details_h2" />
 
+    <!-- Manager Small Picture -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/manager_profile"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/profile_picture_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mabel_headshot"
+        app:layout_constraintEnd_toStartOf="@+id/manager"
+        app:layout_constraintStart_toEndOf="@+id/vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/manager_label"
+        app:shapeAppearanceOverlay="@style/circle_profile_pic_style" />
+
     <!-- Manager Value -->
     <TextView
         android:id="@+id/manager"
         style="@style/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:text="@string/manager"
-        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintStart_toEndOf="@+id/manager_profile"
         app:layout_constraintTop_toBottomOf="@+id/manager_label" />
-
 
 
 
@@ -134,14 +148,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/horizontal_bottom" />
-
-
-
-
-
-
-
-
 
 
     <!-- VERTICAL guidelines -->
@@ -161,6 +167,7 @@
         android:orientation="vertical"
         app:layout_constraintGuide_end="24dp" />
 
+    <!-- HORIZONTAL Guidelines -->
     <!-- G horizontal_bottom_profile -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/horizontal_bottom_profile"
@@ -169,7 +176,7 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="240dp" />
 
-    <!-- HORIZONTAL Guidelines -->
+
     <!-- G horizontal_bottom -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/horizontal_bottom"
