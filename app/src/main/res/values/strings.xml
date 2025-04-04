@@ -24,7 +24,7 @@
     <string name="hire_date_label">Hired on</string>
     <string name="hire_date">03/03/2025</string>
 
-    <string name="contract_type_label">Hired on</string>
+    <string name="contract_type_label">Contract Type</string>
     <string name="contract_type">Part-Time</string>
 
     <string name="start_date_label">Started on</string>

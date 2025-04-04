@@ -32,18 +32,6 @@
         app:layout_constraintTop_toTopOf="@+id/top_box"
         app:shapeAppearanceOverlay="@style/circle_profile_pic_style" />
 
-    <!-- Edit Secondary Btn -->
-    <Button
-        android:id="@+id/edit_btn"
-        style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/manrope_medium"
-        android:text="@string/edit_btn"
-        android:textAllCaps="true"
-        app:layout_constraintBaseline_toBaselineOf="@+id/team_details_h2"
-        app:layout_constraintEnd_toStartOf="@+id/vertical_right"
-        app:strokeColor="@color/colorNeutral700" />
 
     <!-- First Name -->
     <TextView
@@ -172,7 +160,113 @@
         app:layout_constraintStart_toEndOf="@+id/team_profile"
         app:layout_constraintTop_toBottomOf="@+id/team_label" />
 
+    <!-- Work Details h2 -->
+    <TextView
+        android:id="@+id/work_details_h2"
+        style="@style/heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/work_details_h2"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/team_profile" />
 
+    <!-- Edit Secondary Btn -->
+    <Button
+        android:id="@+id/edit_btn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:text="@string/edit_btn"
+        android:textAllCaps="true"
+        app:layout_constraintBaseline_toBaselineOf="@+id/work_details_h2"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+        app:strokeColor="@color/colorNeutral700" />
+
+    <!-- Hire Date Label -->
+    <TextView
+        android:id="@+id/hire_date_label"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/hire_date_label"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/work_details_h2" />
+
+    <!-- Hire Date Value -->
+    <TextView
+        android:id="@+id/hire_date"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hire_date"
+        app:layout_constraintStart_toEndOf="@+id/vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/hire_date_label" />
+
+    <!-- Contract Type Label -->
+    <TextView
+        android:id="@+id/contract_type_label"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/contract_type_label"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/hire_date" />
+
+    <!-- Contract Type Value -->
+    <TextView
+        android:id="@+id/contract_type"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contract_type"
+        app:layout_constraintStart_toEndOf="@+id/vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/contract_type_label" />
+
+    <!-- Start Date Label -->
+    <TextView
+        android:id="@+id/start_date_label"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/start_date_label"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/contract_type" />
+
+    <!-- Start Date Value -->
+    <TextView
+        android:id="@+id/start_date"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_date"
+        app:layout_constraintStart_toEndOf="@+id/vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/start_date_label" />
+
+    <!-- Contract Expired Date Label -->
+    <TextView
+        android:id="@+id/contract_expired_date_label"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/contract_expired_date_label"
+        app:layout_constraintStart_toStartOf="@+id/vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/start_date" />
+
+    <!-- Contract Expired Date Value -->
+    <TextView
+        android:id="@+id/contract_expired_date"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contract_expired_date"
+        app:layout_constraintStart_toEndOf="@+id/vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/contract_expired_date_label" />
 
     <!-- Close Primary Btn -->
     <Button
