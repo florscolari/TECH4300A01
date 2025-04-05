@@ -100,7 +100,7 @@
             android:layout_height="wrap_content"
             android:text="@string/manager_label"
             app:layout_constraintBottom_toTopOf="@+id/team_label"
-            app:layout_constraintStart_toEndOf="@+id/vertical_center"
+            app:layout_constraintStart_toEndOf="@+id/vertical_center_right"
             app:layout_constraintTop_toBottomOf="@+id/horizontal_top_profile"
             app:layout_constraintVertical_chainStyle="packed" />
 
@@ -142,7 +142,7 @@
             android:layout_marginTop="8dp"
             android:text="@string/team_label"
             app:layout_constraintBottom_toTopOf="@+id/horizontal_bottom_profile"
-            app:layout_constraintStart_toEndOf="@+id/vertical_center"
+            app:layout_constraintStart_toEndOf="@+id/vertical_center_right"
             app:layout_constraintTop_toBottomOf="@+id/manager_label" />
 
         <!-- Team Small Picture -->
@@ -438,13 +438,21 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.05" />
 
-        <!-- G vertical_center -->
+        <!-- G vertical_center_left -->
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/vertical_center"
+            android:id="@+id/vertical_center_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.5" />
+            app:layout_constraintGuide_percent="0.48" />
+
+        <!-- G vertical_center_right -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_center_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.52" />
 
         <!-- G vertical_right -->
         <androidx.constraintlayout.widget.Guideline
