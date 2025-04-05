@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Landscape Layout for Default Size -->
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbars="vertical"
-    android:fadingEdge="none"
+    android:paddingBottom="0dp"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
         tools:context=".MainActivity">
 
         <!-- Top box -->
         <ImageView
             android:id="@+id/top_box"
             android:layout_width="match_parent"
-            android:layout_height="16dp"
+            android:layout_height="4dp"
             android:contentDescription="@string/top_box_description"
             android:src="@drawable/top_box"
             app:layout_constraintEnd_toEndOf="parent"
@@ -31,9 +30,9 @@
         <!-- Rounded Profile Picture -->
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/profilePicture"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:layout_marginTop="32dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
             android:contentDescription="@string/profile_picture_description"
             android:scaleType="centerCrop"
             android:src="@drawable/mabel_headshot"
@@ -44,7 +43,7 @@
         <!-- First Name -->
         <TextView
             android:id="@+id/first_name"
-            style="@style/heading1"
+            style="@style/heading1_sm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="2dp"
@@ -60,7 +59,7 @@
         <!-- Last Name -->
         <TextView
             android:id="@+id/last_name"
-            style="@style/heading1"
+            style="@style/heading1_sm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="2dp"
@@ -141,12 +140,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/team_label"
-            app:layout_constraintBottom_toTopOf="@+id/horizontal_bottom_profile"
             app:layout_constraintStart_toEndOf="@+id/vertical_center_right"
             app:layout_constraintTop_toBottomOf="@+id/manager_label" />
 
         <!-- Team Small Picture -->
-
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/team_profile"
             android:layout_width="22dp"
@@ -155,7 +152,6 @@
             android:contentDescription="@string/profile_picture_description"
             android:scaleType="centerCrop"
             android:src="@drawable/teamprofile"
-            app:layout_constraintBottom_toTopOf="@+id/horizontal_bottom_profile"
             app:layout_constraintStart_toStartOf="@+id/manager_profile"
             app:layout_constraintTop_toBottomOf="@+id/manager_profile"
             app:shapeAppearanceOverlay="@style/circle_profile_pic_style"
@@ -176,7 +172,7 @@
         <!-- Work Details h2 -->
         <TextView
             android:id="@+id/work_details_h2"
-            style="@style/heading2"
+            style="@style/heading2_sm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/work_details_h2"
@@ -190,10 +186,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/manrope_medium"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
             android:text="@string/edit_btn"
             android:textAllCaps="true"
-            app:layout_constraintTop_toBottomOf="@id/horizontal_top_content"
             app:layout_constraintEnd_toStartOf="@+id/vertical_center_left"
+            app:layout_constraintTop_toBottomOf="@id/horizontal_top_content"
             app:strokeColor="@color/colorNeutral700"
             tools:ignore="DuplicateSpeakableTextCheck" />
 
@@ -284,13 +282,12 @@
         <!-- Personal Details h2 -->
         <TextView
             android:id="@+id/personal_details_h2"
-            style="@style/heading2"
+            style="@style/heading2_sm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
             android:text="@string/personal_details_h2"
-            app:layout_constraintStart_toStartOf="@+id/vertical_left"
-            app:layout_constraintTop_toBottomOf="@+id/contract_expired_date" />
+            app:layout_constraintBaseline_toBaselineOf="@+id/edit_btn_personal_details"
+            app:layout_constraintStart_toStartOf="@+id/vertical_center_right" />
 
         <!-- Edit Secondary Btn -->
         <Button
@@ -301,8 +298,8 @@
             android:fontFamily="@font/manrope_medium"
             android:text="@string/edit_btn"
             android:textAllCaps="true"
-            app:layout_constraintBaseline_toBaselineOf="@+id/personal_details_h2"
             app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintTop_toBottomOf="@id/horizontal_top_content"
             app:strokeColor="@color/colorNeutral700" />
 
         <!-- Date of Birth Label -->
@@ -311,9 +308,9 @@
             style="@style/label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/dob_label"
-            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintStart_toStartOf="@+id/vertical_center_right"
             app:layout_constraintTop_toBottomOf="@+id/personal_details_h2" />
 
         <!-- Date of Birth Value -->
@@ -323,7 +320,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/dob"
-            app:layout_constraintStart_toEndOf="@+id/vertical_left"
+            app:layout_constraintStart_toEndOf="@+id/vertical_center_right"
             app:layout_constraintTop_toBottomOf="@+id/dob_label" />
 
         <!-- Gender Label -->
@@ -332,9 +329,9 @@
             style="@style/label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/gender_label"
-            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintStart_toStartOf="@+id/vertical_center_right"
             app:layout_constraintTop_toBottomOf="@+id/dob" />
 
         <!-- Gender Value -->
@@ -344,7 +341,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/gender"
-            app:layout_constraintStart_toEndOf="@+id/vertical_left"
+            app:layout_constraintStart_toEndOf="@+id/vertical_center_right"
             app:layout_constraintTop_toBottomOf="@+id/gender_label" />
 
         <!-- Emergency Contact Label -->
@@ -353,9 +350,9 @@
             style="@style/label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/emergency_contact_label"
-            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintStart_toStartOf="@+id/vertical_center_right"
             app:layout_constraintTop_toBottomOf="@+id/gender" />
 
         <!-- Emergency Contact Phone Number -->
@@ -365,7 +362,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/emergency_contact_phone_number"
-            app:layout_constraintStart_toEndOf="@+id/vertical_left"
+            app:layout_constraintStart_toEndOf="@+id/vertical_center_right"
             app:layout_constraintTop_toBottomOf="@+id/emergency_contact_label" />
 
         <!-- Emergency Contact Divider -->
@@ -413,20 +410,6 @@
             app:layout_constraintBaseline_toBaselineOf="@+id/emergency_contact_phone_number"
             app:layout_constraintStart_toEndOf="@+id/divider2" />
 
-        <!-- Close Primary Btn -->
-        <Button
-            android:id="@+id/close_btn"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="72dp"
-            android:text="@string/close_btn"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/emergency_contact_phone_number"
-            app:layout_constraintVertical_bias="1.0" />
-
 
         <!-- VERTICAL guidelines -->
         <!-- G vertical_left -->
@@ -462,13 +445,13 @@
             app:layout_constraintGuide_percent="0.95" />
 
         <!-- HORIZONTAL Guidelines -->
-        <!-- G horizontal_bottom_profile -->
+        <!-- G horizontal_top_profile -->
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/horizontal_top_profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="32dp" />
+            app:layout_constraintGuide_begin="12dp" />
 
 
         <!-- G horizontal_bottom -->
@@ -477,7 +460,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_end="56dp" />
+            app:layout_constraintGuide_percent="0.18" />
 
         <!-- G horizontal_top_content -->
         <androidx.constraintlayout.widget.Guideline
@@ -485,15 +468,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.16" />
+            app:layout_constraintGuide_percent="0.22" />
 
-        <!-- G horizontal_bottom_position -->
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/horizontal_bottom_profile"
-            android:layout_width="wrap_content"
+
+        <!-- Close Primary Btn -->
+        <Button
+            android:id="@+id/close_btn"
+            android:layout_width="240dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.12" />
+            android:layout_marginTop="8dp"
+            android:text="@string/close_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contract_expired_date" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
