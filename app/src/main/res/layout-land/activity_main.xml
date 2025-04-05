@@ -179,10 +179,9 @@
             style="@style/heading2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
             android:text="@string/work_details_h2"
-            app:layout_constraintStart_toStartOf="@+id/vertical_left"
-            app:layout_constraintTop_toBottomOf="@+id/team_profile" />
+            app:layout_constraintBaseline_toBaselineOf="@+id/edit_btn_work_details"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left" />
 
         <!-- Edit Secondary Btn -->
         <Button
@@ -193,8 +192,8 @@
             android:fontFamily="@font/manrope_medium"
             android:text="@string/edit_btn"
             android:textAllCaps="true"
-            app:layout_constraintBaseline_toBaselineOf="@+id/work_details_h2"
-            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintTop_toBottomOf="@id/horizontal_top_content"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_center_left"
             app:strokeColor="@color/colorNeutral700"
             tools:ignore="DuplicateSpeakableTextCheck" />
 
@@ -204,7 +203,7 @@
             style="@style/label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/hire_date_label"
             app:layout_constraintStart_toStartOf="@+id/vertical_left"
             app:layout_constraintTop_toBottomOf="@+id/work_details_h2" />
@@ -225,7 +224,7 @@
             style="@style/label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/contract_type_label"
             app:layout_constraintStart_toStartOf="@+id/vertical_left"
             app:layout_constraintTop_toBottomOf="@+id/hire_date" />
@@ -246,7 +245,7 @@
             style="@style/label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/start_date_label"
             app:layout_constraintStart_toStartOf="@+id/vertical_left"
             app:layout_constraintTop_toBottomOf="@+id/contract_type" />
@@ -267,7 +266,7 @@
             style="@style/label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/contract_expired_date_label"
             app:layout_constraintStart_toStartOf="@+id/vertical_left"
             app:layout_constraintTop_toBottomOf="@+id/start_date" />
