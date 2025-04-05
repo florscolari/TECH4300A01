@@ -186,7 +186,6 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/manrope_medium"
             android:text="@string/edit_btn"
-            android:textAllCaps="true"
             app:layout_constraintBaseline_toBaselineOf="@+id/work_details_h2"
             app:layout_constraintEnd_toStartOf="@+id/vertical_right"
             app:strokeColor="@color/colorNeutral700"
@@ -295,7 +294,6 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/manrope_medium"
             android:text="@string/edit_btn"
-            android:textAllCaps="true"
             app:layout_constraintBaseline_toBaselineOf="@+id/personal_details_h2"
             app:layout_constraintEnd_toStartOf="@+id/vertical_right"
             app:strokeColor="@color/colorNeutral700" />

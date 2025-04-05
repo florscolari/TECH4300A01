@@ -64,6 +64,7 @@ Out of Scope
 --- 3. Landscape Layout ----
 ▸ Test if guidelines in percentage instead of dp is better for adapt the content through different screen sizes
     SOLUTION APPLIED: Vertical guidelines in percentage. It worked!
+▸ Set Landscape layout for default view
 
 --- 4. Other Screen Sizes ----
- Set Extra Large
+ #TODO Set Extra Large

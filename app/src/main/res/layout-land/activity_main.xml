@@ -186,10 +186,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/manrope_medium"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
             android:text="@string/edit_btn"
-            android:textAllCaps="true"
             app:layout_constraintEnd_toStartOf="@+id/vertical_center_left"
             app:layout_constraintTop_toBottomOf="@id/horizontal_top_content"
             app:strokeColor="@color/colorNeutral700"
@@ -297,7 +294,6 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/manrope_medium"
             android:text="@string/edit_btn"
-            android:textAllCaps="true"
             app:layout_constraintEnd_toStartOf="@+id/vertical_right"
             app:layout_constraintTop_toBottomOf="@id/horizontal_top_content"
             app:strokeColor="@color/colorNeutral700" />
@@ -410,7 +406,6 @@
             app:layout_constraintBaseline_toBaselineOf="@+id/emergency_contact_phone_number"
             app:layout_constraintStart_toEndOf="@+id/divider2" />
 
-
         <!-- VERTICAL guidelines -->
         <!-- G vertical_left -->
         <androidx.constraintlayout.widget.Guideline
@@ -453,7 +448,6 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_begin="12dp" />
 
-
         <!-- G horizontal_bottom -->
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/horizontal_bottom"
@@ -470,7 +464,6 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.22" />
 
-
         <!-- Close Primary Btn -->
         <Button
             android:id="@+id/close_btn"
@@ -482,8 +475,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/contract_expired_date" />
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
