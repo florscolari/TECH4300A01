@@ -1,5 +1,5 @@
 CONSTRAINT 1. The UI will dynamically utilize available space, ensuring effective adaptation to changes in screen orientation.
-    Covered on XXX 1.
+    Covered on TASKS 3 & 4.
 CONSTRAINT 2. Implement appropriate colour/contrast schemes and styles to facilitate easy differentiation of information on the screen from other elements.
     Covered on TASK 1
 CONSTRAINT 3. Design the user interface to seamlessly support a minimum of two different languages.
@@ -9,10 +9,11 @@ CONSTRAINT 3. Design the user interface to seamlessly support a minimum of two d
 Workflow:
 1. Portrait Layout (ImageViews, TextViews, ConstraintLayout, ScrollView, Color Palette (WCAG guidelines for Accessible colors is min of >= 4.5:1 ratio & 16sp for text size)
 2. Localisation
-3. Landscape Layout & Other Sizes
-4. Build a slide deck
-5. Record video presentation
-6. Submit
+3. Landscape Layout
+4. Other Sizes
+5. Build a slide deck
+6. Record video presentation
+7. Submit
 
 Out of Scope
 - Night/Dark Mode Color Variation
@@ -60,6 +61,9 @@ Out of Scope
 ▸ Set third language. Chosen: Portuguese. es/strings.xml
     TEST Successful 🚀
 
---- 3. Landscape Layout & Other Sizes ----
+--- 3. Landscape Layout ----
 ▸ Test if guidelines in percentage instead of dp is better for adapt the content through different screen sizes
     SOLUTION APPLIED: Vertical guidelines in percentage. It worked!
+
+--- 4. Other Screen Sizes ----
+ Set Extra Large
