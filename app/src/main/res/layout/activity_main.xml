@@ -152,7 +152,8 @@
             app:layout_constraintEnd_toStartOf="@+id/manager"
             app:layout_constraintStart_toEndOf="@+id/vertical_left"
             app:layout_constraintTop_toBottomOf="@+id/team_label"
-            app:shapeAppearanceOverlay="@style/circle_profile_pic_style" />
+            app:shapeAppearanceOverlay="@style/circle_profile_pic_style"
+            tools:ignore="ImageContrastCheck" />
 
         <!-- Team Value -->
         <TextView

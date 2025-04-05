@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#000000</color>
+    <color name="black">#000000</color> <!--BLACK Contrast Ratio with text in white: 21:1 PASS -->
     <color name="white">#FFFFFF</color>
-    <color name="colorPrimary">#0b57d0</color> <!--Contrast Ratio with text in white: 6.38 PASS -->
+    <color name="colorPrimary">#0b57d0</color> <!-- BLUE Contrast Ratio with text in white: 6.38:1 PASS -->
 
     <!-- Neutrals -->
     <color name="colorNeutral700">#455A64</color>

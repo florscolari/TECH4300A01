@@ -1,7 +1,7 @@
 CONSTRAINT 1. The UI will dynamically utilize available space, ensuring effective adaptation to changes in screen orientation.
     Covered on XXX 1.
 CONSTRAINT 2. Implement appropriate colour/contrast schemes and styles to facilitate easy differentiation of information on the screen from other elements.
-    Covered on TASK 1.
+    Covered on TASK 1 ( Day & Night/Dark modes).
 CONSTRAINT 3. Design the user interface to seamlessly support a minimum of two different languages.
     Covered on TASK 2 (Spanish and Portuguese added. With English, 3 languages covered)
 
@@ -33,7 +33,7 @@ Workflow:
     🐞 shapeableImageView doesn't display image when running emulator. SOLVED. The right way of pointing the image resource is android:src=, I was using tools:srcCompat
 
 --- Button Views ---
-▸ Set primary and secondary styles on themes to be reusable
+▸ Set primary and secondary styles on themes to be reusable (and colors on colors.xml)
     ⚠️ How on earth an outline button is a custom one instead of being a default view?
 ▸ Set secondary btn as custom btn
     🐞 Having components from Material Components are overwriting the components that don't have that theme applied. I tried to have both types but it didn't work.
@@ -48,6 +48,7 @@ Workflow:
        Possible solution: using ScrollView > ConstraintView
        Let's give it a go... in a different branch for sure
        SOLUTION APPLIED: ScrollView with 1 nested child: the ConstraintLayout that I've been using. It worked!! 🚀
+▸ Set color variation for Dark mode (basic)
 
 --- Splash Screen ---
 ▸ Set icon (ic_launcher) and background color
