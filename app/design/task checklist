@@ -1,7 +1,7 @@
 CONSTRAINT 1. The UI will dynamically utilize available space, ensuring effective adaptation to changes in screen orientation.
     Covered on XXX 1.
 CONSTRAINT 2. Implement appropriate colour/contrast schemes and styles to facilitate easy differentiation of information on the screen from other elements.
-    Covered on TASK 1 ( Day & Night/Dark modes).
+    Covered on TASK 1
 CONSTRAINT 3. Design the user interface to seamlessly support a minimum of two different languages.
     Covered on TASK 2 (Spanish and Portuguese added. With English, 3 languages covered)
 
@@ -14,6 +14,8 @@ Workflow:
 5. Record video presentation
 6. Submit
 
+Out of Scope
+- Night/Dark Mode Color Variation
 
 
 ---- 1. PORTRAIT LAYOUT TASKS ----
@@ -48,7 +50,6 @@ Workflow:
        Possible solution: using ScrollView > ConstraintView
        Let's give it a go... in a different branch for sure
        SOLUTION APPLIED: ScrollView with 1 nested child: the ConstraintLayout that I've been using. It worked!! 🚀
-▸ Set color variation for Dark mode (basic)
 
 --- Splash Screen ---
 ▸ Set icon (ic_launcher) and background color
