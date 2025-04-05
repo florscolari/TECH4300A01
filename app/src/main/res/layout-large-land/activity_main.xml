@@ -431,7 +431,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.44" />
+            app:layout_constraintGuide_percent="0.4" />
 
         <!-- G vertical_right -->
         <androidx.constraintlayout.widget.Guideline
@@ -439,7 +439,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.88" />
+            app:layout_constraintGuide_percent="0.65" />
 
         <!-- G vertical_ -->
         <androidx.constraintlayout.widget.Guideline
@@ -447,7 +447,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.91" />
+            app:layout_constraintGuide_percent="0.67" />
 
         <!-- G vertical_ -->
         <androidx.constraintlayout.widget.Guideline
@@ -485,14 +485,13 @@
         <!-- Close Primary Btn -->
         <Button
             android:id="@+id/close_btn"
-            android:layout_width="240dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_marginStart="1432dp"
             android:text="@string/close_btn"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/vertical_left"
-            app:layout_constraintTop_toBottomOf="@+id/contract_expired_date" />
-
+            app:layout_constraintBaseline_toBaselineOf="@+id/last_name"
+            app:layout_constraintEnd_toEndOf="@id/vertical_right_margin"
+           />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
