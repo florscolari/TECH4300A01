@@ -67,4 +67,8 @@ Out of Scope
 ▸ Set Landscape layout for default view
 
 --- 4. Other Screen Sizes ----
- #TODO Set Extra Large
+▸ Set a version through qualifier Size for Large Size
+#TODO:
+▸ Set a version through qualifier Size for Small Size
+▸ Set a version through qualifier Large > Landscape
+▸ Set a version through qualifier Small > Landscape

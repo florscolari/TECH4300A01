@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="none"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <!-- Top box -->
+        <ImageView
+            android:id="@+id/top_box"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:contentDescription="@string/top_box_description"
+            android:src="@drawable/top_box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Rounded Profile Picture -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/profile_picture_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mabel_headshot"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_bottom"
+            app:layout_constraintStart_toStartOf="@id/vertical_left"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_top_profile"
+            app:shapeAppearanceOverlay="@style/circle_profile_pic_style" />
+
+        <!-- First Name -->
+        <TextView
+            android:id="@+id/first_name"
+            style="@style/heading1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:text="@string/first_name"
+            app:layout_constraintBottom_toTopOf="@+id/position"
+            app:layout_constraintEnd_toStartOf="@+id/last_name"
+            app:layout_constraintHorizontal_bias="0.005"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@id/profilePicture"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_top_profile"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/position"
+            style="@style/subheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/position"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_bottom"
+            app:layout_constraintStart_toStartOf="@+id/first_name"
+            app:layout_constraintTop_toBottomOf="@+id/first_name" />
+
+        <!-- Last Name -->
+        <TextView
+            android:id="@+id/last_name"
+            style="@style/heading1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="@string/last_name"
+            app:layout_constraintBaseline_toBaselineOf="@+id/first_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/first_name" />
+
+        <!-- Position -->
+
+        <!-- Team Details h2
+        <TextView
+            android:id="@+id/team_details_h2"
+            style="@style/heading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="@string/team_details_h2"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/horizontal_top_position" />
+        -->
+        <!-- Manager Label -->
+        <TextView
+            android:id="@+id/manager_label"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manager_label"
+            app:layout_constraintBottom_toTopOf="@+id/team_label"
+            app:layout_constraintStart_toEndOf="@+id/vertical_center_right"
+            app:layout_constraintTop_toBottomOf="@+id/horizontal_top_profile"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <!-- Manager Small Picture -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/manager_profile"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@string/profile_picture_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/manager_headshot"
+            app:layout_constraintBottom_toTopOf="@+id/team_profile"
+            app:layout_constraintEnd_toStartOf="@+id/manager"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/manager_label"
+            app:layout_constraintTop_toBottomOf="@+id/horizontal_top_profile"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:shapeAppearanceOverlay="@style/circle_profile_pic_style" />
+
+        <!-- Manager Value -->
+        <TextView
+            android:id="@+id/manager"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/manager"
+            app:layout_constraintBaseline_toBaselineOf="@+id/manager_label"
+            app:layout_constraintStart_toEndOf="@+id/manager_profile" />
+
+        <!-- Team Label -->
+        <TextView
+            android:id="@+id/team_label"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/team_label"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_bottom"
+            app:layout_constraintStart_toEndOf="@+id/vertical_center_right"
+            app:layout_constraintTop_toBottomOf="@+id/manager_label" />
+
+        <!-- Team Small Picture -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/team_profile"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="6dp"
+            android:contentDescription="@string/profile_picture_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/teamprofile"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_bottom"
+            app:layout_constraintStart_toStartOf="@+id/manager_profile"
+            app:layout_constraintTop_toBottomOf="@+id/manager_profile"
+            app:shapeAppearanceOverlay="@style/circle_profile_pic_style"
+            tools:ignore="ImageContrastCheck" />
+
+        <!-- Team Value -->
+        <TextView
+            android:id="@+id/team"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/team"
+            app:layout_constraintBaseline_toBaselineOf="@+id/team_label"
+            app:layout_constraintStart_toEndOf="@+id/team_profile" />
+
+        <!-- Work Details h2 -->
+        <TextView
+            android:id="@+id/work_details_h2"
+            style="@style/heading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/work_details_h2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/edit_btn_work_details"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left" />
+
+        <!-- Edit Secondary Btn -->
+        <Button
+            android:id="@+id/edit_btn_work_details"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:text="@string/edit_btn"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_center_left"
+            app:layout_constraintTop_toBottomOf="@id/horizontal_top_content"
+            app:strokeColor="@color/colorNeutral700"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <!-- Hire Date Label -->
+        <TextView
+            android:id="@+id/hire_date_label"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/hire_date_label"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/work_details_h2" />
+
+        <!-- Hire Date Value -->
+        <TextView
+            android:id="@+id/hire_date"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hire_date"
+            app:layout_constraintStart_toEndOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/hire_date_label" />
+
+        <!-- Contract Type Label -->
+        <TextView
+            android:id="@+id/contract_type_label"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/contract_type_label"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/hire_date" />
+
+        <!-- Contract Type Value -->
+        <TextView
+            android:id="@+id/contract_type"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contract_type"
+            app:layout_constraintStart_toEndOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/contract_type_label" />
+
+        <!-- Start Date Label -->
+        <TextView
+            android:id="@+id/start_date_label"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/start_date_label"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/contract_type" />
+
+        <!-- Start Date Value -->
+        <TextView
+            android:id="@+id/start_date"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_date"
+            app:layout_constraintStart_toEndOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/start_date_label" />
+
+        <!-- Contract Expired Date Label -->
+        <TextView
+            android:id="@+id/contract_expired_date_label"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/contract_expired_date_label"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/start_date" />
+
+        <!-- Contract Expired Date Value -->
+        <TextView
+            android:id="@+id/contract_expired_date"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contract_expired_date"
+            app:layout_constraintStart_toEndOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/contract_expired_date_label" />
+
+        <!-- Personal Details h2 -->
+        <TextView
+            android:id="@+id/personal_details_h2"
+            style="@style/heading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/personal_details_h2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/edit_btn_personal_details"
+            app:layout_constraintStart_toStartOf="@+id/vertical_center_right" />
+
+        <!-- Edit Secondary Btn -->
+        <Button
+            android:id="@+id/edit_btn_personal_details"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:text="@string/edit_btn"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintTop_toBottomOf="@id/horizontal_top_content"
+            app:strokeColor="@color/colorNeutral700" />
+
+        <!-- Date of Birth Label -->
+        <TextView
+            android:id="@+id/dob_label"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/dob_label"
+            app:layout_constraintStart_toStartOf="@+id/vertical_center_right"
+            app:layout_constraintTop_toBottomOf="@+id/personal_details_h2" />
+
+        <!-- Date of Birth Value -->
+        <TextView
+            android:id="@+id/dob"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dob"
+            app:layout_constraintStart_toEndOf="@+id/vertical_center_right"
+            app:layout_constraintTop_toBottomOf="@+id/dob_label" />
+
+        <!-- Gender Label -->
+        <TextView
+            android:id="@+id/gender_label"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/gender_label"
+            app:layout_constraintStart_toStartOf="@+id/vertical_center_right"
+            app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+        <!-- Gender Value -->
+        <TextView
+            android:id="@+id/gender"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            app:layout_constraintStart_toEndOf="@+id/vertical_center_right"
+            app:layout_constraintTop_toBottomOf="@+id/gender_label" />
+
+        <!-- Emergency Contact Label -->
+        <TextView
+            android:id="@+id/emergency_contact_label"
+            style="@style/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/emergency_contact_label"
+            app:layout_constraintStart_toStartOf="@+id/vertical_center_right"
+            app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+        <!-- Emergency Contact Phone Number -->
+        <TextView
+            android:id="@+id/emergency_contact_phone_number"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emergency_contact_phone_number"
+            app:layout_constraintStart_toEndOf="@+id/vertical_center_right"
+            app:layout_constraintTop_toBottomOf="@+id/emergency_contact_label" />
+
+        <!-- Emergency Contact Divider -->
+        <TextView
+            android:id="@+id/divider"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+
+            android:text="@string/divider"
+            app:layout_constraintStart_toEndOf="@+id/emergency_contact_phone_number"
+            app:layout_constraintTop_toBottomOf="@+id/emergency_contact_label" />
+
+        <!-- Emergency Contact Name -->
+        <TextView
+            android:id="@+id/emergency_contact_name"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/emergency_contact_name"
+            app:layout_constraintBaseline_toBaselineOf="@+id/emergency_contact_phone_number"
+            app:layout_constraintStart_toEndOf="@+id/divider" />
+
+        <!-- Emergency Contact Divider -->
+        <TextView
+            android:id="@+id/divider2"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/divider"
+            app:layout_constraintStart_toEndOf="@+id/emergency_contact_name"
+            app:layout_constraintTop_toBottomOf="@+id/emergency_contact_label" />
+
+        <!-- Emergency Contact Name -->
+        <TextView
+            android:id="@+id/emergency_contact_relationship"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/emergency_contact_relationship"
+            app:layout_constraintBaseline_toBaselineOf="@+id/emergency_contact_phone_number"
+            app:layout_constraintStart_toEndOf="@+id/divider2" />
+
+        <!-- VERTICAL guidelines -->
+        <!-- G vertical_left -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.025" />
+
+        <!-- G vertical_center_left -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_center_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <!-- G vertical_center_right -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_center_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <!-- G vertical_right -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <!-- G vertical_ -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_right_col2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.67" />
+
+        <!-- G vertical_ -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_right_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <!-- HORIZONTAL Guidelines -->
+        <!-- G horizontal_top_profile -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal_top_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="60dp" />
+
+        <!-- G horizontal_bottom -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <!-- G horizontal_top_content -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal_top_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.38" />
+
+        <!-- Close Primary Btn -->
+        <Button
+            android:id="@+id/close_btn"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="@string/close_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/contract_expired_date" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
