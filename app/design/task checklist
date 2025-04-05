@@ -57,3 +57,7 @@ Workflow:
     TEST Successful 🚀
 ▸ Set third language. Chosen: Portuguese. es/strings.xml
     TEST Successful 🚀
+
+--- 3. Landscape Layout & Other Sizes ----
+▸ Test if guidelines in percentage instead of dp is better for adapt the content through different screen sizes
+    SOLUTION APPLIED: Vertical guidelines in percentage. It worked!

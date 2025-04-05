@@ -429,7 +429,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_end="387dp" />
+            app:layout_constraintGuide_percent="0.05" />
 
         <!-- G vertical_right -->
         <androidx.constraintlayout.widget.Guideline
@@ -437,7 +437,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_end="24dp" />
+            app:layout_constraintGuide_percent="0.95" />
 
         <!-- HORIZONTAL Guidelines -->
         <!-- G horizontal_bottom_profile -->
