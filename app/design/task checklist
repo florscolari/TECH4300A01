@@ -1,3 +1,5 @@
+<!--TECH4300 Mobile Development Assessment 1 Florencia Scolari ID 1847863 April 2025-->
+
 CONSTRAINT 1. The UI will dynamically utilize available space, ensuring effective adaptation to changes in screen orientation.
     Covered on TASKS 3 & 4.
 CONSTRAINT 2. Implement appropriate colour/contrast schemes and styles to facilitate easy differentiation of information on the screen from other elements.
@@ -69,9 +71,8 @@ Out of Scope
 --- 4. Other Screen Sizes ----
 ▸ Set a version through qualifier Size for Large Size
     . Landscape Layout added
-
 ▸ Set a version through qualifier Size for Small Size
     . Landscape Layout added
-#TODO:
+
 
 
