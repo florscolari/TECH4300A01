@@ -37,7 +37,7 @@ Out of Scope
     ⚠️ ShapeableImageView is within the default Android Studio setup. TBD if it is allowed for A1. So cool to use!
     🐞 shapeableImageView doesn't display image when running emulator. SOLVED. The right way of pointing the image resource is android:src=, I was using tools:srcCompat
 
-## --- Button Views ---
+### --- Button Views ---
 ▸ Set primary and secondary styles on themes to be reusable (and colors on colors.xml)
     ⚠️ How on earth an outline button is a custom one instead of being a default view?
 ▸ Set secondary btn as custom btn
@@ -45,7 +45,7 @@ Out of Scope
        SOLUTION APPLIED: Understand and using button views only from material components (Outlined btn and Contained btn)
 ▸ Set color by state to add feedback after tapping btn --> No need to set it, it has been handled by Material Components
 
---- Text Views ---
+### --- Text Views ---
     📘 Each view needs at least 1 vertical constraint and 1 horizontal constraint
 ▸ Set styles on themes.xml for heading 1, heading 2, and label
 ▸ Set TextViews for sections: Team Details, Work Details and Personal Details
@@ -54,21 +54,21 @@ Out of Scope
        Let's give it a go... in a different branch for sure
        SOLUTION APPLIED: ScrollView with 1 nested child: the ConstraintLayout that I've been using. It worked!! 🚀
 
-## --- Splash Screen ---
+### --- Splash Screen ---
 ▸ Set icon (ic_launcher) and background color
 
----- 2. LOCALISATION TASKS ----
+##---- 2. LOCALISATION TASKS ----
 ▸ Set second language. Chosen: Spanish. es/strings.xml
     TEST Successful 🚀
 ▸ Set third language. Chosen: Portuguese. es/strings.xml
     TEST Successful 🚀
 
---- 3. Landscape Layout ----
+##--- 3. Landscape Layout ----
 ▸ Test if guidelines in percentage instead of dp is better for adapt the content through different screen sizes
     SOLUTION APPLIED: Vertical guidelines in percentage. It worked!
 ▸ Set Landscape layout for default view
 
---- 4. Other Screen Sizes ----
+##--- 4. Other Screen Sizes ----
 ▸ Set a version through qualifier Size for Large Size
     . Landscape Layout added
 ▸ Set a version through qualifier Size for Small Size
