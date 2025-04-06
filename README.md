@@ -8,7 +8,7 @@ CONSTRAINT 3. Design the user interface to seamlessly support a minimum of two d
     Covered on TASK 2 (Spanish and Portuguese added. With English, 3 languages covered)
 
 
-Workflow:
+## Workflow:
 1. Portrait Layout (ImageViews, TextViews, ConstraintLayout, ScrollView, Color Palette (WCAG guidelines for Accessible colors is min of >= 4.5:1 ratio & 16sp for text size)
 2. Localisation
 3. Landscape Layout
@@ -21,7 +21,7 @@ Out of Scope
 - Night/Dark Mode Color Variation
 
 
----- 1. PORTRAIT LAYOUT TASKS ----
+## ---- 1. PORTRAIT LAYOUT TASKS ----
 ▸ Set strings in strings.xml
 ▸ Set strings in activity_main.xml
 ▸ Set id in activity_main.xml
@@ -37,7 +37,7 @@ Out of Scope
     ⚠️ ShapeableImageView is within the default Android Studio setup. TBD if it is allowed for A1. So cool to use!
     🐞 shapeableImageView doesn't display image when running emulator. SOLVED. The right way of pointing the image resource is android:src=, I was using tools:srcCompat
 
---- Button Views ---
+## --- Button Views ---
 ▸ Set primary and secondary styles on themes to be reusable (and colors on colors.xml)
     ⚠️ How on earth an outline button is a custom one instead of being a default view?
 ▸ Set secondary btn as custom btn
@@ -54,7 +54,7 @@ Out of Scope
        Let's give it a go... in a different branch for sure
        SOLUTION APPLIED: ScrollView with 1 nested child: the ConstraintLayout that I've been using. It worked!! 🚀
 
---- Splash Screen ---
+## --- Splash Screen ---
 ▸ Set icon (ic_launcher) and background color
 
 ---- 2. LOCALISATION TASKS ----
